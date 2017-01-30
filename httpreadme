@@ -1,0 +1,20 @@
+Follow the below steps to compile and run the cleint and server
+
+CASE 1 : check local client with local server
+For Server
+1: Change the directory on terminal and execute make -f httpserver to compile the server program
+2: Execute./web_server 127.0.0.1 PORT FILE_DIRECTORY to run the server 
+For Client
+3: Change the directory on a new terminal to client directory and execute make -f httpclient to compile the client
+4: Execute ./web_client 127.0.0.1/FILE_NAME PORT to run the client 
+5: Verify the file has been copied from the server location to client location.
+
+CASE 2: Check the server with standard web browser
+1: Change the directory on terminal and execute make -f httpserver to compile the server program
+2: Execute./web_server 127.0.0.1 PORT FILE_DIRECTORY to run the server
+3: On the browser type "localhost:PORTNUMBER/Filename" -PORTNUMBER : port on which the server is running, Filename : File which needs to be extracted
+
+CASE 3: Check client with standard server
+1: Change the directory on a new terminal to client directory and execute make -f httpclient to compile the client
+2: Execute ./web_client URL 80 to run the client - URL : the standard web server we want to ping 80 is the HTTP service dedicated port number 
+

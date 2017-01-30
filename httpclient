@@ -1,0 +1,11 @@
+#_*_Makefile _*_
+
+#target: dependencies
+#	action
+
+all: 
+	gcc web_client.c -o web_client
+
+clean:
+	rm web_client
+
